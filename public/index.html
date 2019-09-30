@@ -3,9 +3,76 @@
   <head>
     <title>Trip Planner</title>
     <link rel='stylesheet' href='./style.css'></link>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css' rel='stylesheet' />
     <script src='./bundle.js' defer></script>
   </head>
   <body>
-    <div id='map'></div>
+    <div id='navbar'></div>
+    <div id='main-content'>
+      <div id='map'></div>
+      <div id='options-block'>
+        <div id='selects'>
+          <div class='options'>
+              <h1 class='header'>Hotels</h1>
+              <div class='dropdown'>
+                <form>
+                  <select>
+                    <option value='option1'>Option 1</option>
+                  </select>
+                </form>
+              </div>
+          </div>
+          <div class='options'>
+              <h1 class='header'>Restaurants</h1>
+              <div class='dropdown'>
+                  <form>
+                      <select>
+                        <option value='option1'>Option 1</option>
+                      </select>
+                    </form>
+              </div>
+          </div>
+          <div class='options'>
+              <h1 class='header'>Things To Do</h1> 
+              <div class='dropdown'>
+                  <form>
+                      <select>
+                        <option value='option1'>Option 1</option>
+                      </select>
+                    </form>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div id='itinerary'>
+        <h1 id='itinerary-header'>Itinerary:</h1>
+        <div id='itinerary-options'>
+            <div class='options'>
+                <h1 class='header'>My Hotel</h1>
+                <div class='list'>
+                    <ul>
+                        <li>Placeholder</li>
+                      </ul>
+                </div>
+            </div>
+            <div class='options'>
+                <h1 class='header'>My Restaurants</h1>
+                <div class='list'>
+                    <ul>
+                        <li>Placeholder</li>
+                      </ul>
+                </div>
+            </div>
+            <div class='options'>
+                <h1 class='header'>My Activities</h1>
+                <div class='list'>
+                    <ul>
+                        <li>Placeholder</li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
